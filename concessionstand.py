@@ -1,9 +1,10 @@
+#Variables of the engine
 menu = ({"Hot Dog": 2.50,"Hamburger": 3.00,"Fries": 1.50,"Soda": 1.00,"Water": 0.75,})
 cart = []
 total = 0
 
-
-while True:
+#Engine
+while True: 
     print(menu)
     order = (str(input("What you like to order from the menu?(q to quit):")))
     if order == "q" "Q":
@@ -17,7 +18,7 @@ while True:
     else:
         print("That item isn't in the menu.")
 
-
+#Finishing 
 print("---Your Cart---")
 
 for order in cart:
@@ -26,4 +27,4 @@ for order in cart:
 print("---Price of your cart---")
 
 for order in total:
-    print(order)
+    print(order) 
