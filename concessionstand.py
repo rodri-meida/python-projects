@@ -28,3 +28,4 @@ print("---Price of your cart---")
 
 for order in total:
     print(order) 
+#Works
