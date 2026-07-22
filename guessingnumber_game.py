@@ -3,7 +3,7 @@ import random
 #setting up variables
 low = 1 
 high = 100
-guesses =+ 1
+guesses = 0
 
 number = random.randint(low, high)
 
@@ -12,7 +12,10 @@ while True:
     guess = (int(input("What number am I thinking? (1---100):")))
     if guess < 1 or guess > 100:
         print(f"Your number is out of range! Pick a number between {low} and {high}.")
-    elif guess < number:
+
+    guesses += 1
+
+    if guess < number:
         print(f"My number is higher than {guess}")
     elif guess > number:
         print(f"My number is lower than {guess}")
